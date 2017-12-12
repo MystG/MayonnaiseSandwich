@@ -1,0 +1,24 @@
+void main () {
+    vec2 uv = uv();
+    vec3 c = black;
+    float r = length(uv);
+    
+    c = sin(uv.x * (10.* time) + time * .5 + uv.y * -20.) * pink;
+    c += sin(uv.x * 6. + time * 1.5) * red;
+    c += sin(uv.x * 6. + time * 3. + uv.y * -1.) * yellow;
+    
+    c += snoise(c);
+    c -= r;
+    c = fract(r*1. - time * 0.5) * c;
+    c += noise(c);
+    
+    vec3 bb = texture2D(backbuffer, uvN()).rgb;
+    
+    c = mix(c, bb, .5);
+    
+    c += sexy();
+    
+    
+    
+	gl_FragColor = vec4(c, 1.0);
+}
