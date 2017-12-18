@@ -18,3 +18,7 @@ All rights reserved to those owners/creators of the music. I simply combined the
 	https://www.youtube.com/watch?v=A5jnftBQw2U
 2. "Is MAYONNAISE an INSTRUMENT" by Davie504
 	https://www.youtube.com/watch?v=DyF8rt6O-fE
+
+# Performance Video Link
+Below is the link to the video of me performing the live code version of this code and music put together.
+https://vimeo.com/247755479
